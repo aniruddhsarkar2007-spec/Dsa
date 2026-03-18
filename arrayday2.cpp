@@ -2,6 +2,8 @@
 // using namespace std;
 // int main()
 // {
+//     first method of initialization
+//     we dont have to count the length of array
 //     int arr[5];
 //     arr[0]=34;
 //     arr[1]=65;
