@@ -35,44 +35,84 @@
 // ----- 30/3/26---
 //sorting not bubblesort
 
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int s;
+//     int temp;
+//     int c;
+//     cout<<"Enter size of array:\n";
+//     cin>>s;
+//     int arr[s];
+//     cout<<"Enter "<<s<<" values:\n";
+//     for(int i=0;i<s;i++)
+//     {
+//         cin>>arr[i];
+//     }
+//     cout<<"Orignal array:\n";
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<arr[i]<<"\t";
+//     }
+//     cout<<"\n Sorted array\n";
+//     for(int i=0;i<s;i++)
+//     {
+//         for(int j=0;j<s-1;j++)
+//         {
+//             if(arr[j]>arr[j+1])
+//             {
+//              temp=arr[j];
+//              arr[j]=arr[j+1];
+//              arr[j+1]=temp;
+//             }
+//         }
+//     }
+//     for(int i=0;i<s;i++)
+//     {
+//         cout<<arr[i]<<"\t";
+//     }
+
+    
+
+// }
+
+
 #include<iostream>
 using namespace std;
 int main()
 {
-    int s;
-    int temp;
-    int c;
-    cout<<"Enter size of array:\n";
-    cin>>s;
-    int arr[s];
-    cout<<"Enter "<<s<<" values:\n";
-    for(int i=0;i<s;i++)
+  int s;
+  cout<<"Enter the size of array:\n";
+  cin>>s;
+  int arr[s];
+  int temp;
+  cout<<"Enter "<<s<<" Values:\n";
+  for(int i=0;i<s;i++)
+  {
+    cin>>arr[i];
+  }
+  cout<<"Orignal Array:\n";
+  for(int i=0;i<s;i++)
+  {
+    cout<<arr[i]<<"\n";
+  }
+  cout<<"Sorted array:\t";
+  for(int i=0;i<s;i++)
+  {
+    for(int j=0;j<s;j++)
     {
-        cin>>arr[i];
-    }
-    cout<<"Orignal array:\n";
-    for(int i=0;i<s;i++)
-    {
-        cout<<arr[i]<<"\t";
-    }
-    cout<<"\nSorted array\n";
-    for(int i=0;i<s;i++)
-    {
-        for(int j=0;j<s-1;j++)
+        if(arr[j]>arr[j+1])
         {
-            if(arr[j]>arr[j+1])
-            {
-             temp=arr[j];
-             arr[j]=arr[j+1];
-             arr[j+1]=temp;
-            }
+            temp=arr[i];
+            arr[i]=arr[j+1];
+            arr[j+1]=temp;
         }
     }
-    for(int i=0;i<s;i++)
-    {
-        cout<<arr[i]<<"\t";
-    }
-
-    
+  }
+  for(int i=0;i<s;i++)
+  {
+    cout<<arr[i]<<"\t";
+  }
 
 }
