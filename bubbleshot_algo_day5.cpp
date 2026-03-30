@@ -1,9 +1,9 @@
 // ------------------------BUBBLE SORT ALGORITHM------------------------
 
-#include<iostream>
-using namespace std;
-int main ()
-{
+// #include<iostream>
+// using namespace std;
+// int main ()
+// {
     // int arr[]={5,2,3,4,1};
     // int length;
     // length=sizeof(arr)/sizeof(arr[0]);
@@ -13,21 +13,66 @@ int main ()
     //     cout<<arr[i]<<"\t";
     // }
 
+    // int s;
+    // cout<<"enter size of array\n";
+    // cin>>s;
+    // int arr[s];
+    // int len;
+    // len=sizeof(arr)/sizeof(arr[0]);
+    // cout<<"enter"<<s<<"values\n";
+    // for(int i=0;i<len;i++)
+    // {
+    //     cin>>arr[i];
+    // }
+    // cout<<"Orignal array:\n";
+    // for(int i=0;i<len;i++)
+    // {
+    //     cout<<arr[i]<<"\t";
+    // }
+//}
+
+
+// ----- 30/3/26---
+//sorting not bubblesort
+
+#include<iostream>
+using namespace std;
+int main()
+{
     int s;
-    cout<<"enter size of array\n";
+    int temp;
+    int c;
+    cout<<"Enter size of array:\n";
     cin>>s;
     int arr[s];
-    int len;
-    len=sizeof(arr)/sizeof(arr[0]);
-    cout<<"enter"<<s<<"values\n";
-    for(int i=0;i<len;i++)
+    cout<<"Enter "<<s<<" values:\n";
+    for(int i=0;i<s;i++)
     {
         cin>>arr[i];
     }
     cout<<"Orignal array:\n";
-    for(int i=0;i<len;i++)
+    for(int i=0;i<s;i++)
     {
         cout<<arr[i]<<"\t";
     }
+    cout<<"\nSorted array\n";
+    for(int i=0;i<s;i++)
+    {
+        for(int j=0;j<s-1;j++)
+        {
+            if(arr[j]>arr[j+1])
+            {
+             temp=arr[j];
+             arr[j]=arr[j+1];
+             arr[j+1]=temp;
+            }
+        }
+    }
+    for(int i=0;i<s;i++)
+    {
+        cout<<arr[i]<<"\t";
+    }
+
+    
 
 }
