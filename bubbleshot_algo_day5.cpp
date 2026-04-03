@@ -124,55 +124,55 @@
 // optimized code
 
 
-#include<iostream>
-using namespace std;
-int main()
-{
-  int s;
-  cout<<"Enter the size of array:\n";
-  cin>>s;
-  int c=0;
-  int arr[s];
-  int temp;
-  cout<<"Enter "<<s<<" Values:\n";
-  for(int i=0;i<s;i++)
-  {
-    cin>>arr[i];
-  }
-  cout<<"Orignal Array:\n ";
-  for(int i=0;i<s;i++)
-  {
-    cout<<arr[i]<<"\n";
-  }
-  cout<<"Sorted array:\t";
-  for(int i=0;i<s;i++)
-  {
-    for(int j=0;j<s-1-i;j++)
-    {
-        if(arr[j]>arr[j+1])
-        {
-            temp=arr[i];
-            arr[i]=arr[j+1];
-            arr[j+1]=temp;
-        }
-        c++;
-    }
-  }
-  for(int i=0;i<s;i++){
-    cout<<arr[i]<<"\t";
-  }
-
-  cout<<"Number of iteration:"<<c;
-
-}
-
-
 // #include<iostream>
 // using namespace std;
-// int main(){
-//   int arr[]={5,3,54,65};
-//   int s=sizeof(arr)/sizeof(arr[0]);
-//   for (int i=0;i<s;i++){
-//     cout<<arr[i]<<endl;
+// int main()
+// {
+//   int s;
+//   cout<<"Enter the size of array:\n";
+//   cin>>s;
+//   int c=0;
+//   int flag;
+//   int arr[s];
+//   int temp;
+//   cout<<"Enter "<<s<<" Values:\n";
+//   for(int i=0;i<s;i++)
+//   {
+//     cin>>arr[i];
 //   }
+//   cout<<"Orignal Array:\n ";
+//   for(int i=0;i<s;i++)
+//   {
+//     cout<<arr[i]<<"\n";
+//   }
+//   cout<<"Sorted array:\t";
+//   for(int i=0;i<s;i++)
+//   {flag=0;
+//     for(int j=0;j<s-1-i;j++)
+//     {
+//         if(arr[j]>arr[j+1])
+//         {
+//             temp=arr[i];
+//             arr[i]=arr[j+1];
+//             arr[j+1]=temp;
+//             flag++;
+//         }
+//         c++;
+//     }
+//     if(flag==0)
+//     {
+//       break;
+//     }
+//   }
+//   for(int i=0;i<s;i++){
+//     cout<<arr[i]<<"\t";
+//   }
+
+//   cout<<"Number of iteration:"<<c;
+
 // }
+
+
+
+
+
