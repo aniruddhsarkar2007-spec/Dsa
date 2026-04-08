@@ -24,7 +24,7 @@ int main()
         else{
             cout<<arr[r][c]<<"\t";
         }
-     }
+     }  
      cout<<"\n"; 
     }
     cout<<"Lower array\n";
